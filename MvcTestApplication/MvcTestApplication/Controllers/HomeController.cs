@@ -13,7 +13,12 @@ namespace MvcTestApplication.Controllers
 
         public ActionResult Index()
         {
-            return View();
+            string model = "Кавабунга";
+            var mdl = "dsd";
+            dynamic testVariable=new Guid();
+            testVariable.SetValue();
+            return View( viewName:"Index",model: model);
+
         }
 
     }
